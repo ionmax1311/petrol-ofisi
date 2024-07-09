@@ -1,0 +1,596 @@
+<?php include_once 'config.php'; ?>
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <base href="<?php echo $host ?>" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Petrol Ofisi</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon/favicon.PNG"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/splide.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://techforce.cloud/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.3/css/intlTelInput.css"
+      integrity="sha512-Hjsts+5q0OWXb6jem9SwlTyJKJpnAXrTtoKIzKeekwUFG6QesBqmr/5+NBXiimtCEUphi7Os72nrefhPbCYqtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <header class="header" id="header">
+        <div class="container flex center just-between">
+          <img
+            src="assets/img/Logo.png"
+            onclick="scrollToElem('#hero')"
+            alt="Logo"
+            width="178"
+            height="36"
+            class="header-logo-img"
+            loading="lazy"
+          />
+          <nav class="navigation">
+            <ul class="nav-list flex center just-end">
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToElem('#about')"
+                  >Şirket hakkında</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToElem('#result')"
+                  >Sonuçlar</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0);" onclick="scrollToElem('#how')"
+                  >Nasıl başlanır</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button class="btn" onclick="scrollToElem('#formLower')">
+            Kayıt
+          </button>
+          <div class="menu-btn-wrapper mob-only">
+            <img
+              src="assets/img/hamburger.png"
+              width="32"
+              height="32"
+              alt="Menu"
+              class="menu-btn-img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero-section" id="hero">
+          <div class="hero-section-bg"></div>
+
+          <div class="hero-title container">
+            <h1 class="main-heading reveal to-right delay-01">
+              SADECE TÜRKİYE VATANDAŞLARINA ÖZEL!
+            </h1>
+            <div class="text-wrapper reveal to-right delay-02">
+              Her Türk vatandaşı, madencilik ve dağıtıma yatırım yaparak ülkenin
+              maden kaynaklarından pay alma hakkına sahiptir.
+            </div>
+          </div>
+          <div class="container flex center just-between">
+            <div class="hero-content reveal to-right delay-01">
+              <video
+                src="assets/video/video.mp4"
+                width="100%"
+                playsinline=""
+                controls=""
+                autoplay
+                muted
+                controlslist="nodownload"
+              ></video>
+            </div>
+            <div class="form-wrapper reveal to-left delay-01">
+              <div name="contacts" class="lead-form form" id="formUpper">
+                <h2 class="form-heading">Ücretsiz kayıt</h2>
+                <form class="">
+                  <div class="step">
+                    <div class="input-wrap">
+                      <input
+                        type="text"
+                        name="first_name"
+                        id="first_name-48101"
+                        placeholder="Adınızı girin"
+                        class=""
+                      />
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="text"
+                        name="last_name"
+                        id="last_name-48101"
+                        placeholder="ISoyadı girin"
+                        class=""
+                      />
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email-48101"
+                        placeholder="E-posta adresinizi girin"
+                        class=""
+                      />
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="input-wrap">
+                      <div class="vue-tel-input">
+                        <input
+                          type="tel"
+                          autocomplete="on"
+                          id="phone"
+                          maxlength="15"
+                          name="phonePart"
+                          placeholder="512345678"
+                          required="required"
+                          tabindex="0"
+                          class="vti__input phone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="checkbox-wrap">
+                    <input
+                      type="checkbox"
+                      name="politics"
+                      id="politics-48101"
+                    /><label for="politics-48101"
+                      >Kabul ediyorum
+                      <a
+                        href="javascript:void(0)"
+                        data-name="policy"
+                        class="alterlink"
+                        >Gizlilik Politikası</a
+                      ></label
+                    >
+                  </div>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" name="over" id="over-48101" /><label
+                      for="over-48101"
+                      >18 yaşından büyüğüm</label
+                    >
+                  </div>
+                  <div class="input-wrap">
+                    <button type="submit">Şimdi kazanmaya başlayın!</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-section" id="about">
+          <div class="container flex center about-section-wrap">
+            <div class="about-img reveal to-right">
+              <img src="assets/img/about-img.jpg" alt="" />
+            </div>
+            <div class="about-text reveal to-left delay-01">
+              <span> Türk vatandaşları için benzersiz yatırım fırsatları </span>
+              <h2>
+                Petrol Ofisi - Türkiye'nin lider akaryakıt ürünleri dağıtım ve
+                madeni yağ şirketi
+              </h2>
+              <p>
+                Türkiye'deki başarılı yatırımcıların piyasadaki en kârlı
+                varlıklar olan petrol ve petrol ürünlerinden servet kazandığı
+                Petrol Ofisi'ne hoş geldiniz. Türk ürünlerini ülkenin dört bir
+                yanına dağıtmak için çok çalışıyoruz ve karşılığında şirket
+                gelir artışı gösteriyor.
+              </p>
+              <p>
+                Finansal başarımızın bir parçası olabileceğiniz için size iyi
+                haberlerimiz var. Hükümetimizle birlikte, yatırım platformunun
+                lansmanını duyurmaktan mutluluk duyuyoruz. Bizimle yatırım
+                yaptığınızda, sadece bir paydaş değil, Petrol Ofisi ailesinin
+                değerli bir üyesi olursunuz. Aramıza hoş geldiniz, yatırımcı!
+              </p>
+              <button class="btn" onclick="scrollToElem('#formLower')">
+                Yatırım yapmaya başlayın
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="why-section" id="result">
+          <div class="container flex just-center center">
+            <h2 class="section-heading reveal to-right">
+              İşte yatırımcılarımızın ortalama sonuçları:
+            </h2>
+          </div>
+          <div class="container flex just-between why-wrapper">
+            <div class="card why-card reveal to-right delay-01">
+              <div class="result-card-top flex center">
+                <img
+                  src="assets/img/a1.jpg"
+                  width="64"
+                  height="64"
+                  alt="Steps Icon"
+                  loading="lazy"
+                />
+                <div>
+                  <span>Merve Yılmaz</span>
+                  <span>Konya</span>
+                </div>
+              </div>
+              <button class="btn" onclick="scrollToElem('#formLower')">
+                Şimdi kazan :
+              </button>
+              <div class="result-number">56 000 TRY</div>
+            </div>
+            <div class="card why-card reveal to-right delay-02">
+              <div class="result-card-top flex center">
+                <img
+                  src="assets/img/a2.jpg"
+                  width="64"
+                  height="64"
+                  alt="Steps Icon"
+                  loading="lazy"
+                />
+                <div>
+                  <span>Kerem Aydın</span>
+                  <span>Antalya</span>
+                </div>
+              </div>
+              <button class="btn" onclick="scrollToElem('#formLower')">
+                Şimdi kazan :
+              </button>
+              <div class="result-number">78 000 TRY</div>
+            </div>
+            <div class="card why-card reveal to-right delay-03">
+              <div class="result-card-top flex center">
+                <img
+                  src="assets/img/a3.jpg"
+                  width="64"
+                  height="64"
+                  alt="Steps Icon"
+                  loading="lazy"
+                />
+                <div>
+                  <span>Elif Demirtaş</span>
+                  <span>Gaziantep</span>
+                </div>
+              </div>
+              <button class="btn" onclick="scrollToElem('#formLower')">
+                Şimdi kazan :
+              </button>
+              <div class="result-number">67 000 TRY</div>
+            </div>
+            <div class="card why-card reveal to-right delay-04">
+              <div class="result-card-top flex center">
+                <img
+                  src="assets/img/a4.jpg"
+                  width="64"
+                  height="64"
+                  alt="Steps Icon"
+                  loading="lazy"
+                />
+                <div>
+                  <span>Yusuf Karadeni</span>
+                  <span>Adana</span>
+                </div>
+              </div>
+              <button class="btn" onclick="scrollToElem('#formLower')">
+                Şimdi kazan :
+              </button>
+              <div class="result-number">45 000 TRY</div>
+            </div>
+          </div>
+          <div class="container">
+            <button
+              type="button"
+              onclick="scrollToElem('#formLower')"
+              class="result-btn btn reveal to-right delay-05"
+            >
+              Yatırım yapmaya başlayın
+            </button>
+          </div>
+        </section>
+
+        <section class="seleb seleb-section">
+          <div class="container">
+            <div class="seleb-wrapper flex center">
+              <div class="seleb-text">
+                <span class="reveal to-right"
+                  >Petrol Ofisi'nden ünlü kişiler</span
+                >
+                <h2 class="section-heading reveal to-right delay-01">
+                  Türk Oyuncu Barış Arduç Petrol Ofisi'ni Öneriyor
+                </h2>
+
+                <p class="reveal to-right delay-02">
+                  Barış Arduç, sadece üstün oyunculuk performanslarıyla değil,
+                  aynı zamanda girişimleriyle de tanınan bir Türk oyuncudur.
+                  Petrol Ofisi platformunu ilk test edenlerden biri oldu ve
+                  verimliliğini onayladı. Bu platforma yaptığı yatırım, bu
+                  projeye olan desteğini ve inancını gösterdi.
+                </p>
+                <p class="reveal to-right delay-03">
+                  Barış Arduç'a göre bu, Türk insanı için tamamen Türk bir ürün.
+                  Küçük bir depozitoyla bile Petrol Ofisi aracılığıyla yüksek
+                  karlar elde edebilirsiniz. Doğal kaynaklar sayesinde finansal
+                  durumunuzu iyileştirme şansınızı kaçırmayın.
+                </p>
+              </div>
+              <div class="seleb-img reveal to-left delay-02">
+                <img src="assets/img/seleb.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="how steps-section" id="how">
+          <div class="container">
+            <h2 class="section-heading centered reveal to-right">
+              Nasıl Üye Olunur?
+            </h2>
+            <div class="cards-wrapper flex just-between">
+              <div class="card steps-card reveal to-right delay-01">
+                <div class="steps-card-top">
+                  <div class="flex just-center">
+                    <img
+                      src="assets/img/h1.png"
+                      width="64"
+                      height="64"
+                      alt="Icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3>Kayıt</h3>
+                  <p>
+                    Web sitemize gidin ve kayıt formunu doğru bilgilerle
+                    doldurun.
+                  </p>
+                </div>
+              </div>
+              <div class="card steps-card reveal to-right delay-02">
+                <div class="steps-card-top">
+                  <div class="flex just-center">
+                    <img
+                      src="assets/img/h2.png"
+                      width="64"
+                      height="64"
+                      alt="Icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3>Yöneticiden Çağrı</h3>
+                  <p>
+                    Confirm your registration by receiving a call from a
+                    personal manager.
+                  </p>
+                </div>
+              </div>
+              <div class="card steps-card reveal to-right delay-03">
+                <div class="steps-card-top">
+                  <div class="flex just-center">
+                    <img
+                      src="assets/img/h3.png"
+                      width="64"
+                      height="64"
+                      alt="Icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3>Kârlar</h3>
+                  <p>
+                    İstediğiniz miktarda yatırım yapın ve kârın tadını çıkarın.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onclick="scrollToElem('#formLower')"
+              class="result-btn btn reveal to-right delay-04"
+            >
+              Yatırım yapmaya başlayın
+            </button>
+          </div>
+        </section>
+        <section class="contact-section" id="contact">
+          <div class="container flex center just-between">
+            <div class="text-part">
+              <h2 class="main-heading reveal to-right delay-01">
+                Ulusal Kaynaklardan Elde Edilen Kârlar Geleceğinizin
+                Anahtarıdır!
+              </h2>
+              <p class="section-text reveal to-right delay-02">
+                Finansal durumunuzu iyileştirmek için ülkenin zenginliklerinin
+                gücünden yararlanın. Uzmanlığımız ve yenilikçi platformumuz ile
+                hedefleriniz ulaşılabilir. Türkiye'yi parlak bir gelecek
+                bekliyor ve bu sizinle başlıyor.
+              </p>
+              <img
+                src="assets/img/payment-method.png"
+                onclick="scrollToElem('#hero')"
+                alt="Payment method"
+                width="460"
+                height="48"
+                class="header-logo-img reveal to-right delay-03"
+                loading="lazy"
+              />
+              <div class="footer-logo reveal to-left delay-04">
+                <img src="assets/img/Logo.png" alt="" />
+              </div>
+            </div>
+            <div class="form-wrapper reveal to-left delay-05">
+              <div name="contacts" class="lead-form form" id="formLower">
+                <h2 class="form-heading">Ücretsiz kayıt</h2>
+                <form class="">
+                  <div class="step">
+                    <div class="input-wrap">
+                      <input
+                        type="text"
+                        name="first_name"
+                        id="first_name-48101"
+                        placeholder="Adınızı girin"
+                        class=""
+                      />
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="text"
+                        name="last_name"
+                        id="last_name-48101"
+                        placeholder="ISoyadı girin"
+                        class=""
+                      />
+                    </div>
+                    <div class="input-wrap">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email-48101"
+                        placeholder="E-posta adresinizi girin"
+                        class=""
+                      />
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="input-wrap">
+                      <div class="vue-tel-input">
+                        <input
+                          type="tel"
+                          autocomplete="on"
+                          id="phone"
+                          maxlength="15"
+                          name="phonePart"
+                          placeholder="512345678"
+                          required="required"
+                          tabindex="0"
+                          class="vti__input phone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="checkbox-wrap">
+                    <input
+                      type="checkbox"
+                      name="politics"
+                      id="politics-48101"
+                    /><label for="politics-48101"
+                      >Kabul ediyorum
+                      <a
+                        href="javascript:void(0)"
+                        data-name="policy"
+                        class="alterlink"
+                        >Gizlilik Politikası</a
+                      ></label
+                    >
+                  </div>
+                  <div class="checkbox-wrap">
+                    <input type="checkbox" name="over" id="over-48101" /><label
+                      for="over-48101"
+                      >18 yaşından büyüğüm</label
+                    >
+                  </div>
+                  <div class="input-wrap">
+                    <button type="submit">Şimdi kazanmaya başlayın!</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="container flex center just-between">
+          <div class="copyright">
+            © <span class="year">2024</span> Petrol Ofisi.
+          </div>
+          <div class="footer-links flex center">
+            <a href="javascript:void(0)" data-name="policy" class="alterlink"
+              >Gizlilik Politikası</a
+            >
+            <a href="javascript:void(0)" data-name="terms" class="alterlink"
+              >Kullanım Koşulları</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- MOBILE MENU -->
+    <nav class="mob-menu mob-only">
+      <img
+        src="assets/img/svg/close-black.svg"
+        width="32"
+        height="32"
+        alt="Close Menu"
+        class="menu-close-img"
+      />
+      <ul class="nav-list flex center">
+        <li>
+          <a
+            href="javascript:void(0);"
+            onclick="scrollToElem('#about'),menuClosing()"
+            >Şirket hakkında</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            onclick="scrollToElem('#result'),menuClosing()"
+            >Sonuçlar</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            onclick="scrollToElem('#how'),menuClosing()"
+            >Nasıl başlanır</a
+          >
+        </li>
+        <li>
+          <button
+            class="btn"
+            onclick="scrollToElem('#formLower'),menuClosing()"
+          >
+            Kayıt
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-underlay"></div>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.5.3/js/intlTelInput.min.js"
+      integrity="sha512-LmFjnRVs7R8+kztt4F1kEyRCFg9Muhyk2Qg5KwvJKG0Imc2sPXvi58IoxfeZVsB10Jgb0u5fVXBeUvXifBjtNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const input = document.querySelectorAll(".phone");
+      input.forEach((element) => {
+        window.intlTelInput(element, {
+          initialCountry: "tr",
+          showSelectedDialCode: true,
+        });
+      });
+    </script>
+  </body>
+</html>
